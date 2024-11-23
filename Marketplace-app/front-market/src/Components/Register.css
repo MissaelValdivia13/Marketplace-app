@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/* Estilos para el contenedor principal */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f2f5; /* Fondo claro */
+  display: flex;
+  background: linear-gradient(135deg, #4A90E2, #9013FE);
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Estilos para el formulario */
+.form {
+  position: relative; /* Permite posicionar elementos hijos */
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Estilos para el enlace "Volver al Login" */
+.form-login {
+  position: absolute; /* Posiciona el enlace respecto al formulario */
+  top: 10px; /* Ajusta la distancia desde la parte superior */
+  right: 10px; /* Ajusta la distancia desde el borde derecho */
+  background-color: #ffffff;
+  color: #4A90E2;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+/* Efecto hover para el enlace */
+.form-login:hover {
+  background-color: #4A90E2;
+  color: #ffffff;
+}
+
+.form-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333333;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Estilos para los campos de entrada */
+.form-field {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.form-label {
+  font-size: 14px;
+  color: #333333;
+}
+
+.form-input {
+  padding: 10px;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+.form-input:focus {
+  border-color: #4A90E2;
+  box-shadow: 0 0 5px rgba(74, 144, 226, 0.5);
+  outline: none;
+}
+
+/* Estilos para el botón */
+.form-button {
+  background-color: #4A90E2;
+  color: #ffffff;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+}
+
+.form-button:hover {
+  background-color: #0065d8;
+}
+
+/* Estilos para el mensaje de error */
+.form-error {
+  color: #FF6B6B;
+  font-size: 14px;
+  text-align: center;
+}
